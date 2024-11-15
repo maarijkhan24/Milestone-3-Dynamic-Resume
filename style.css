@@ -1,0 +1,275 @@
+
+/* Reset some base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.template-selector {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.resume-builder {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+form, .resume-output {
+    flex: 1;
+    min-width: 300px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+form h2, .resume-output h2 {
+    color: #007bff;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.resume-output h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.resume-output div {
+    margin-bottom: 20px;
+}
+
+.resume-output p {
+    line-height: 1.4;
+}
+/* Modern Template */
+.modern {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.modern h3 {
+    color: #9acd32;
+    margin-bottom: 5px;
+}
+
+.modern .resume-output div {
+    background: #444;
+    color: #ddd;
+    padding: 15px;
+    border-left: 4px solid #9acd32;
+}
+
+.modern h2 {
+    color: #9acd32;
+    border-bottom: 2px solid #9acd32;
+}
+
+/* Classic Template */
+.classic {
+    background: #f4f4f9;
+    color: #333;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.classic h3 {
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+.classic .resume-output div {
+    border-left: 4px solid #007bff;
+    padding: 15px;
+    background: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.classic h2 {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+}
+
+/* Creative Template */
+.creative {
+    background: linear-gradient(135deg, rgb(29, 2, 29) 0%, rgb(235, 63, 91) 100%);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.creative h3 {
+    color: #fff;
+    background:rgb(240, 99, 122);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.creative .resume-output div {
+    background: #fff;
+    color: #333;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 4px solid #ff6b6b;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.creative h2 {
+    color: #fff;
+    border-bottom: none;
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.professional h3 {
+    color:black;
+    background:rgb(240, 226, 99);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.professional .resume-output div {
+    background: #fff;
+    color: #333;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 4px solid #e2f57a;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.professional {
+    background:white;
+    color:gray;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid yellow;
+}
+.professional h2 {
+    color:black;
+    border-bottom: none;
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.minimalist h3 {
+    color:black;
+    background-color: rgb(252, 249, 249);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.minimalist {
+    background:rgb(252, 223, 180);
+    color:gray;
+    padding: 20px;
+    border: none;
+}
+.minimalist h2 {
+    color:black;
+    border-bottom: none;
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.colorful {
+    background: #e3f2fd;
+    color: #0d47a1;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .resume-builder {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form, .resume-output {
+        width: 90%;
+    }
+}
+
+/* Add these new styles at the end of your existing CSS file */
+
+.resume-builder {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.resume-output {
+    position: sticky;
+    top: 20px;
+    max-height: calc(100vh - 40px);
+    overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+    .resume-builder {
+        flex-direction: column;
+    }
+
+    .resume-output {
+        position: static;
+        max-height: none;
+    }
+}

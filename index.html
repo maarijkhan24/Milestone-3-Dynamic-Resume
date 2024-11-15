@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dynamic Resume Builder</h1>
+        <div class="template-selector">
+            <label for="template" style="font-weight: bold;">Choose a Template:</label>
+            <select id="template">
+                <option value="modern">Modern Template</option>
+                <option value="classic">Classic Template</option>
+                <option value="creative">Creative Template</option>
+                <option value="professional">Professional Template</option>
+                <option value="minimalist">Minimalist Template</option>
+               
+            </select>
+        </div>
+        <div class="resume-builder">
+            <form id="resumeForm">
+                <h2>Personal Information</h2>
+                <input type="text" id="name" placeholder="Full Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="tel" id="phone" placeholder="Phone Number" required>
+                <input type="text" id="address" placeholder="Address" required>
+
+                <h2>Education</h2>
+                <div id="educationFields">
+                    <div class="education-entry">
+                        <input type="text" class="degree" placeholder="Degree" required>
+                        <input type="text" class="school" placeholder="School/University" required>
+                        <input type="text" class="graduationYear" placeholder="Graduation Year" required>
+                    </div>
+                </div>
+                <button type="button" id="addEducation">Add More Education</button>
+
+                <h2>Work Experience</h2>
+                <div id="experienceFields">
+                    <div class="experience-entry">
+                        <input type="text" class="jobTitle" placeholder="Job Title" required>
+                        <input type="text" class="company" placeholder="Company" required>
+                        <input type="text" class="workDates" placeholder="Work Dates" required>
+                        <textarea class="jobDescription" placeholder="Job Description" required></textarea>
+                    </div>
+                </div>
+                <button type="button" id="addExperience">Add More Experience</button>
+
+                <h2>Skills</h2>
+                <input type="text" id="skills" placeholder="Skills (comma-separated)" required>
+
+                <button type="submit">Generate Resume</button>
+            </form>
+
+            <div id="resumeOutput" class="resume-output">
+                <h2>Generated Resume</h2>
+                <div id="personalInfo"></div>
+                <div id="educationInfo"></div>
+                <div id="workExperience"></div>
+                <div id="skillsInfo"></div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
